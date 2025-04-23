@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+.merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Navbar Section Start */
+#navbar {
+  background: #f9f9f9;
+}
+
+.navbar-toggler span {
+  color: rgb(82, 205, 203);
+}
+
+.navbar-nav {
+  margin-left: 20px;
+}
+
+.nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 550;
+  color: black;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: 0.5s ease;
+}
+
+.navbar-brand img {
+  width: 70px;
+  padding-left: 20px;
+}
+
+.nav-item .nav-link:hover {
+  background: rgb(82, 205, 203);
+  color: white;
+}
+
+#navbar form button {
+  background: rgb(82, 205, 203);
+  color: white;
+  border: none;
+}
+
+#navbar form button:hover {
+  background: rgb(41, 172, 169);
+}
+/* Navbar Section End */
+
+/* Home Section Start */
+.home {
+  width: 100%;
+  height: 88vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0.2)),
+    url(../img/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home .content {
+  text-align: center;
+  padding-top: 170px;
+}
+
+.home .content h5 {
+  color: whitesmoke;
+  font-size: 30px;
+  font-weight: 500;
+  text-shadow: 0px 1px 1px black;
+}
+
+.home .content h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: 700;
+  text-shadow: 0px 1px 1px black;
+  margin-top: 5px;
+}
+
+.changecontent::after {
+  content: " ";
+  color: rgb(82, 205, 203);
+  text-shadow: 0px 1px 1px black;
+  animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext {
+  0% {
+    content: "Pendidikan";
+  }
+  10% {
+    content: "Kesehatan";
+  }
+  20% {
+    content: "Kemiskinan";
+  }
+  30% {
+    content: "Kelaparan";
+  }
+}
+
+.home .content p {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px black;
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+
+.home .content a {
+  padding: 10px;
+  background: white;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: 550;
+  border-radius: 5px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.home .content a:hover {
+  background: rgb(82, 205, 203);
+  color: white;
+}
+
+@media (max-width: 850px) {
+  .home {
+    height: 75vh;
+    background-position: 50%;
+  }
+
+  .home .content h5 {
+    font-size: 25px;
+  }
+
+  .home .content h1 {
+    font-size: 35px;
+  }
+
+  .home .content p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .home .content h5 {
+    font-size: 20px;
+  }
+
+  .home .content h1 {
+    font-size: 30px;
+  }
+
+  .home .content p {
+    font-size: 10px;
+  }
+  .home {
+    height: 68vh;
+  }
+}
+/* Home Section End */
+
+/* Program Section Start */
+.main-text h1 {
+  color: rgb(54, 149, 148);
+}
+
+.card-body a button {
+  border-color: bisque;
+  transition: 0.5s;
+}
+
+.card-body a button:hover {
+  background: rgb(82, 205, 203);
+  font-weight: bolder;
+  color: white;
+}
+
+.program {
+  background: #d1d7d6;
+  padding: 20px;
+}
+
+.program .card {
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 4px 12px black;
+  transition: 0.5s;
+}
+
+.program .card img {
+  border-radius: 5px;
+}
+
+.program .card .card-body {
+  background: transparent;
+}
+
+.program .card .card-body h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.program .card .card-body .checked {
+  color: rgb(82, 205, 203);
+}
+
+.star i {
+  font-size: 15px;
+}
+
+@media (max-width: 450px) {
+  .kelaparan {
+    margin-top: -60px;
+  }
+}
+
+@media (max-width: 850px) {
+  .kelaparan {
+    margin-top: -10px;
+  }
+}
+/* Program Section End */
+
+/* Service Section Start */
+.service {
+  padding: 60px;
+}
+
+.service-list-1 {
+  height: 200px;
+  border-radius: 5px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+    url(../img/donate.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.service-list-1:hover {
+  transform: scale(1.1);
+}
+
+.service-list-2 {
+  height: 200px;
+  border-radius: 5px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+    url(../img/quran.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.service-list-2:hover {
+  transform: scale(1.1);
+}
+
+.service-list-3 {
+  height: 200px;
+  border-radius: 5px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+    url(../img/donate.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+.service-list-4 {
+  height: 200px;
+  border-radius: 5px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+    url(../img/donate.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+.service-link {
+  padding-top: 80px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.service-img img {
+  margin-left: 90px;
+  width: 420px;
+  height: 420px;
+  border-radius: 150px;
+  box-shadow: 10px 10px black;
+}
+
+@media (max-width: 767px) {
+  .wakaf {
+    margin-top: 10px;
+  }
+
+  .service-img img {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .wakaf {
+    margin-top: 10px;
+  }
+
+  .service-img img {
+    margin-top: 40px;
+    height: 300px;
+  }
+}
+/* Service Section End */
+
+/* About Section Start */
+.about {
+  padding-top: 45px;
+  padding-bottom: 55px;
+  margin-top: 30px;
+  background: #d1d7d6;
+}
+
+.about .card {
+  border-radius: 10px;
+}
+
+.about .card img {
+  border-radius: 10px;
+}
+
+.about h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.about p {
+  text-align: justify;
+  font-weight: 500;
+  color: white;
+}
+
+.about-text {
+  box-shadow: 10px 10px black;
+  background: rgb(54, 149, 148);
+}
+
+.about-img .card {
+  box-shadow: 0px 10px 5px black;
+}
+
+#about-btn {
+  width: 150px;
+  height: 38px;
+  border: none;
+  border-radius: 5px;
+  background: rgb(92, 192, 190);
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 550;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#about-btn:hover {
+  width: 170px;
+}
+
+@media (max-width: 430px) {
+  .about-text {
+    width: 420px;
+  }
+}
+/* About Section End */
+
+/* Footer Section Start */
+#footer {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  background: white;
+}
+
+#footer h1 {
+  color: rgb(54, 149, 148);
+  font-weight: 600;
+  text-shadow: 0px 0px 1px black;
+}
+
+.social-links i {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  background: black;
+  color: white;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.social-links i:hover {
+  background: rgb(54, 149, 148);
+}
+/* Footer Section End */
