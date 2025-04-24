@@ -187,7 +187,14 @@
 }
 
 .program {
-  background: #d1d7d6;
+  background-image: linear-gradient(
+    to right bottom,
+    #f1fdff,
+    #e1fafd,
+    #d0f6fb,
+    #bff3f9,
+    #adeff7
+  );
   padding: 20px;
 }
 
@@ -329,7 +336,14 @@
   padding-top: 45px;
   padding-bottom: 55px;
   margin-top: 30px;
-  background: #d1d7d6;
+  background-image: linear-gradient(
+    to right bottom,
+    #f1fdff,
+    #e1fafd,
+    #d0f6fb,
+    #bff3f9,
+    #adeff7
+  );
 }
 
 .about .card {
