@@ -3,6 +3,10 @@
     {
       "source": "/",
       "destination": "/views/index.html"
+    },
+    {
+      "source": "/pendidikan",
+      "destination": "/views/pendidikan.html"
     }
   ]
 }
